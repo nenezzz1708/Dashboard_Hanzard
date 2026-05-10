@@ -1,0 +1,260 @@
+<!-- ========================= -->
+<!-- index.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard Hazard Report</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>SECTION DEPARTEMENT: DASHBOARD UTPE HAZARD REPORT</h1>
+      <h2>TAHUN 2026</h2>
+    </div>
+
+    <!-- TOP DASHBOARD -->
+    <div class="dashboard-top">
+
+      <!-- CARD -->
+      <div class="card">
+
+        <div class="division-title">
+          Corporate Human Capital Division
+        </div>
+
+        <div class="stats">
+
+          <div class="box">
+            <p>JUMLAH PEKERJA</p>
+            <h1>60</h1>
+          </div>
+
+          <div class="box">
+            <p>SUDAH MENGISI</p>
+            <h1>36</h1>
+          </div>
+
+          <div class="box">
+            <p>BELUM MENGISI</p>
+            <h1>24</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PIE CHART -->
+      <div class="card">
+
+        <div class="division-title">
+          STATUS SUBMIT DIVISI
+        </div>
+
+        <div class="chart-container">
+          <canvas id="pieChart"></canvas>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- DATA PEKERJA -->
+    <!-- ========================= -->
+
+    <div class="table-card worker-card">
+
+      <div class="worker-header">
+
+        <div class="table-title">
+          DATA PEKERJA & JUMLAH SUBMIT
+        </div>
+
+        <input type="text" id="searchWorker" placeholder="Cari nama pekerja...">
+
+      </div>
+
+      <div class="table-scroll">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>No</th>
+              <th>Nama Pekerja</th>
+              <th>Jumlah Submit</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="workerTable"></tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+    <!-- TOP TIER -->
+    <div class="dashboard-bottom">
+
+      <!-- TABLE -->
+      <div class="table-card">
+
+        <div class="table-title">
+          TOP TIER DEPARTEMENT
+        </div>
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Department</th>
+              <th>Jumlah Orang</th>
+              <th>Sudah Mengisi</th>
+              <th>Persentase</th>
+            </tr>
+          </thead>
+
+          <tbody id="tableBody"></tbody>
+
+        </table>
+
+      </div>
+
+      <!-- BAR CHART -->
+      <div class="chart-card">
+
+        <h2>Status Submit</h2>
+
+        <canvas id="barChart"></canvas>
+
+      </div>
+
+    </div>
+
+    <!-- PER DEPARTEMENT -->
+    <div class="dashboard-top">
+
+      <!-- CARD -->
+      <div class="card">
+
+        <div class="division-title">
+          Corporate Human Capital, Safety & Sustainability Division
+        </div>
+
+        <div class="stats">
+
+          <div class="box">
+            <p>JUMLAH PEKERJA</p>
+            <h1>7</h1>
+          </div>
+
+          <div class="box">
+            <p>SUDAH MENGISI</p>
+            <h1>3</h1>
+          </div>
+
+          <div class="box">
+            <p>BELUM MENGISI</p>
+            <h1>4</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PIE CHART -->
+      <div class="card">
+
+        <div class="division-title">
+          STATUS SUBMIT PER DEPARTMENT
+        </div>
+
+        <div class="chart-container">
+          <canvas id="departmentPie"></canvas>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TOP SUBMIT -->
+    <div class="dashboard-bottom">
+
+      <!-- TABLE -->
+      <div class="table-card">
+
+        <div class="table-title">
+          TOP SUBMIT PEKERJA
+        </div>
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Rank</th>
+              <th>Nama Pekerja</th>
+              <th>Total Submit</th>
+              <th>Status</th>
+              <th>Tanggal Submit</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="submitTable"></tbody>
+
+        </table>
+
+      </div>
+
+      <!-- CHART -->
+      <div class="chart-card">
+
+        <h2>Trend Submit Pekerja</h2>
+
+        <canvas id="submitChart"></canvas>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="dashboard-bottom">
+
+    <div class="chart-card">
+
+      <h2>
+        TREN SUBMIT HAZARD REPORT
+        SEDEPARTEMEN DALAM 1 TAHUN
+      </h2>
+
+      <canvas id="yearTrendChart"></canvas>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
