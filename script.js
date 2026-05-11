@@ -1,12 +1,4 @@
-/* ========================= */
-/* script.js */
-/* ========================= */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-  /* ========================= */
-  /* DATA DEPARTMENT */
-  /* ========================= */
 
   const dataDepartment = [
 
@@ -41,10 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   ];
-
-  /* ========================= */
-  /* PIE CHART */
-  /* ========================= */
 
   new Chart(document.getElementById("pieChart"), {
 
@@ -90,10 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-  /* ========================= */
-  /* TABLE DEPARTMENT */
-  /* ========================= */
-
   const tableBody =
     document.getElementById("tableBody");
 
@@ -122,10 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
   });
-
-  /* ========================= */
-  /* BAR CHART */
-  /* ========================= */
 
   new Chart(document.getElementById("barChart"), {
 
@@ -182,10 +162,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-  /* ========================= */
-  /* PIE CHART DEPARTMENT */
-  /* ========================= */
-
   new Chart(document.getElementById("departmentPie"), {
 
     type: "doughnut",
@@ -230,10 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   });
-
-  /* ========================= */
-  /* TOP SUBMIT PEKERJA */
-  /* ========================= */
 
   const submitData = [
 
@@ -307,10 +279,6 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
   });
-
-  /* ========================= */
-  /* SUBMIT CHART */
-  /* ========================= */
 
   new Chart(document.getElementById("submitChart"), {
 
@@ -485,10 +453,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   });
-
-  /* ========================= */
-  /* DATA PEKERJA */
-  /* ========================= */
 
   const workerNames = [
 
@@ -726,10 +690,6 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
 
   });
-
-  /* ========================= */
-  /* SEARCH PEKERJA */
-  /* ========================= */
 
   const searchWorker =
     document.getElementById("searchWorker");
